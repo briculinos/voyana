@@ -54,11 +54,13 @@ const handler = NextAuth({
     },
     async session({ session, token }) {
       // Send properties to the client
+      if (token.user && typeof token.user === 'object') {
+        session.user = token.user as any
+      }
       return {
         ...session,
         accessToken: token.accessToken,
-        user: token.user,
-      }
+      } as any
     },
   },
   pages: {
