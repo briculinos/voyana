@@ -158,6 +158,16 @@ async def google_auth(request: GoogleAuthRequest):
         if not user_info:
             raise HTTPException(status_code=401, detail="Invalid Google token")
 
+        # Check email whitelist
+        if settings.allowed_emails:
+            user_email = user_info['email'].lower()
+            if user_email not in settings.allowed_emails:
+                logger.warning(f"Access denied for non-whitelisted email: {user_email}")
+                raise HTTPException(
+                    status_code=403,
+                    detail="Access denied. Your email is not authorized to use this application."
+                )
+
         logger.info(f"User authenticated: {user_info['email']}")
 
         # Create JWT token

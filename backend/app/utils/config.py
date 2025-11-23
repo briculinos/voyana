@@ -40,6 +40,17 @@ class Settings(BaseSettings):
 
     # Google OAuth
     google_client_id: str = ""
+    allowed_emails: Union[List[str], str] = ""  # Comma-separated list of allowed emails
+
+    @field_validator('allowed_emails', mode='before')
+    @classmethod
+    def parse_allowed_emails(cls, v):
+        """Parse comma-separated string into list"""
+        if isinstance(v, str):
+            if not v:
+                return []
+            return [email.strip().lower() for email in v.split(',')]
+        return [email.lower() for email in v]
 
     # LangSmith
     langchain_tracing_v2: bool = False

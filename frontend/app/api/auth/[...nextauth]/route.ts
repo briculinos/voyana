@@ -29,6 +29,11 @@ const handler = NextAuth({
             // Store the JWT token in the session
             account.access_token = data.access_token
             return true
+          } else if (response.status === 403) {
+            // User email not whitelisted
+            const error = await response.json()
+            console.error("Access denied:", error.detail)
+            return false
           }
         } catch (error) {
           console.error("Backend authentication error:", error)
