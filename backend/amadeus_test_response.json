@@ -1,0 +1,2905 @@
+[
+  {
+    "type": "flight-offer",
+    "id": "1",
+    "source": "GDS",
+    "instantTicketingRequired": false,
+    "nonHomogeneous": false,
+    "oneWay": false,
+    "isUpsellOffer": false,
+    "lastTicketingDate": "2025-11-24",
+    "lastTicketingDateTime": "2025-11-24",
+    "numberOfBookableSeats": 5,
+    "itineraries": [
+      {
+        "duration": "PT1H55M",
+        "segments": [
+          {
+            "departure": {
+              "iataCode": "CPH",
+              "terminal": "2",
+              "at": "2025-11-30T08:30:00"
+            },
+            "arrival": {
+              "iataCode": "LGW",
+              "terminal": "S",
+              "at": "2025-11-30T09:25:00"
+            },
+            "carrierCode": "D8",
+            "number": "3510",
+            "aircraft": {
+              "code": "7M8"
+            },
+            "operating": {
+              "carrierCode": "D8"
+            },
+            "duration": "PT1H55M",
+            "id": "2",
+            "numberOfStops": 0,
+            "blacklistedInEU": false
+          }
+        ]
+      },
+      {
+        "duration": "PT12H30M",
+        "segments": [
+          {
+            "departure": {
+              "iataCode": "LGW",
+              "terminal": "S",
+              "at": "2025-12-07T20:35:00"
+            },
+            "arrival": {
+              "iataCode": "ARN",
+              "terminal": "5",
+              "at": "2025-12-07T23:55:00"
+            },
+            "carrierCode": "D8",
+            "number": "4460",
+            "aircraft": {
+              "code": "73H"
+            },
+            "operating": {
+              "carrierCode": "D8"
+            },
+            "duration": "PT2H20M",
+            "id": "5",
+            "numberOfStops": 0,
+            "blacklistedInEU": false
+          },
+          {
+            "departure": {
+              "iataCode": "ARN",
+              "terminal": "5",
+              "at": "2025-12-08T08:55:00"
+            },
+            "arrival": {
+              "iataCode": "CPH",
+              "terminal": "3",
+              "at": "2025-12-08T10:05:00"
+            },
+            "carrierCode": "D8",
+            "number": "3195",
+            "aircraft": {
+              "code": "7M8"
+            },
+            "operating": {
+              "carrierCode": "D8"
+            },
+            "duration": "PT1H10M",
+            "id": "6",
+            "numberOfStops": 0,
+            "blacklistedInEU": false
+          }
+        ]
+      }
+    ],
+    "price": {
+      "currency": "EUR",
+      "total": "323.34",
+      "base": "164.00",
+      "fees": [
+        {
+          "amount": "0.00",
+          "type": "SUPPLIER"
+        },
+        {
+          "amount": "0.00",
+          "type": "TICKETING"
+        }
+      ],
+      "grandTotal": "323.34"
+    },
+    "pricingOptions": {
+      "fareType": [
+        "PUBLISHED"
+      ],
+      "includedCheckedBagsOnly": false
+    },
+    "validatingAirlineCodes": [
+      "DY"
+    ],
+    "travelerPricings": [
+      {
+        "travelerId": "1",
+        "fareOption": "STANDARD",
+        "travelerType": "ADULT",
+        "price": {
+          "currency": "EUR",
+          "total": "161.67",
+          "base": "82.00"
+        },
+        "fareDetailsBySegment": [
+          {
+            "segmentId": "2",
+            "cabin": "ECONOMY",
+            "fareBasis": "QCALF",
+            "brandedFare": "LOWFARE",
+            "brandedFareLabel": "LOWFARE",
+            "class": "Q",
+            "includedCheckedBags": {
+              "quantity": 0
+            },
+            "includedCabinBags": {
+              "quantity": 0
+            },
+            "amenities": [
+              {
+                "description": "CHARGEABLE BAG 1",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHARGEABLE BAG 2",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "PRE RESERVED SEAT ASSIGNMENT",
+                "isChargeable": true,
+                "amenityType": "PRE_RESERVED_SEAT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "FAST TRACK WHERE OFFERED",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "OVERHEAD CABIN BAG W PRIO BRD",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHANGEABLE TICKET",
+                "isChargeable": true,
+                "amenityType": "BRANDED_FARES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "INTERNET ACCESS",
+                "isChargeable": false,
+                "amenityType": "ENTERTAINMENT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              }
+            ]
+          },
+          {
+            "segmentId": "5",
+            "cabin": "ECONOMY",
+            "fareBasis": "TLF",
+            "brandedFare": "LOWFARE",
+            "brandedFareLabel": "LOWFARE",
+            "class": "T",
+            "includedCheckedBags": {
+              "quantity": 0
+            },
+            "includedCabinBags": {
+              "quantity": 0
+            },
+            "amenities": [
+              {
+                "description": "CHARGEABLE BAG 1",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHARGEABLE BAG 2",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "PRE RESERVED SEAT ASSIGNMENT",
+                "isChargeable": true,
+                "amenityType": "PRE_RESERVED_SEAT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "FAST TRACK WHERE OFFERED",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "OVERHEAD CABIN BAG W PRIO BRD",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHANGEABLE TICKET",
+                "isChargeable": true,
+                "amenityType": "BRANDED_FARES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "INTERNET ACCESS",
+                "isChargeable": false,
+                "amenityType": "ENTERTAINMENT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              }
+            ]
+          },
+          {
+            "segmentId": "6",
+            "cabin": "ECONOMY",
+            "fareBasis": "QCALF",
+            "brandedFare": "LOWFARE",
+            "brandedFareLabel": "LOWFARE",
+            "class": "Q",
+            "includedCheckedBags": {
+              "quantity": 0
+            },
+            "includedCabinBags": {
+              "quantity": 0
+            },
+            "amenities": [
+              {
+                "description": "CHARGEABLE BAG 1",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHARGEABLE BAG 2",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "PRE RESERVED SEAT ASSIGNMENT",
+                "isChargeable": true,
+                "amenityType": "PRE_RESERVED_SEAT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "FAST TRACK WHERE OFFERED",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "OVERHEAD CABIN BAG W PRIO BRD",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHANGEABLE TICKET",
+                "isChargeable": true,
+                "amenityType": "BRANDED_FARES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "INTERNET ACCESS",
+                "isChargeable": false,
+                "amenityType": "ENTERTAINMENT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "travelerId": "2",
+        "fareOption": "STANDARD",
+        "travelerType": "ADULT",
+        "price": {
+          "currency": "EUR",
+          "total": "161.67",
+          "base": "82.00"
+        },
+        "fareDetailsBySegment": [
+          {
+            "segmentId": "2",
+            "cabin": "ECONOMY",
+            "fareBasis": "QCALF",
+            "brandedFare": "LOWFARE",
+            "brandedFareLabel": "LOWFARE",
+            "class": "Q",
+            "includedCheckedBags": {
+              "quantity": 0
+            },
+            "includedCabinBags": {
+              "quantity": 0
+            },
+            "amenities": [
+              {
+                "description": "CHARGEABLE BAG 1",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHARGEABLE BAG 2",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "PRE RESERVED SEAT ASSIGNMENT",
+                "isChargeable": true,
+                "amenityType": "PRE_RESERVED_SEAT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "FAST TRACK WHERE OFFERED",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "OVERHEAD CABIN BAG W PRIO BRD",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHANGEABLE TICKET",
+                "isChargeable": true,
+                "amenityType": "BRANDED_FARES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "INTERNET ACCESS",
+                "isChargeable": false,
+                "amenityType": "ENTERTAINMENT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              }
+            ]
+          },
+          {
+            "segmentId": "5",
+            "cabin": "ECONOMY",
+            "fareBasis": "TLF",
+            "brandedFare": "LOWFARE",
+            "brandedFareLabel": "LOWFARE",
+            "class": "T",
+            "includedCheckedBags": {
+              "quantity": 0
+            },
+            "includedCabinBags": {
+              "quantity": 0
+            },
+            "amenities": [
+              {
+                "description": "CHARGEABLE BAG 1",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHARGEABLE BAG 2",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "PRE RESERVED SEAT ASSIGNMENT",
+                "isChargeable": true,
+                "amenityType": "PRE_RESERVED_SEAT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "FAST TRACK WHERE OFFERED",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "OVERHEAD CABIN BAG W PRIO BRD",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHANGEABLE TICKET",
+                "isChargeable": true,
+                "amenityType": "BRANDED_FARES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "INTERNET ACCESS",
+                "isChargeable": false,
+                "amenityType": "ENTERTAINMENT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              }
+            ]
+          },
+          {
+            "segmentId": "6",
+            "cabin": "ECONOMY",
+            "fareBasis": "QCALF",
+            "brandedFare": "LOWFARE",
+            "brandedFareLabel": "LOWFARE",
+            "class": "Q",
+            "includedCheckedBags": {
+              "quantity": 0
+            },
+            "includedCabinBags": {
+              "quantity": 0
+            },
+            "amenities": [
+              {
+                "description": "CHARGEABLE BAG 1",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHARGEABLE BAG 2",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "PRE RESERVED SEAT ASSIGNMENT",
+                "isChargeable": true,
+                "amenityType": "PRE_RESERVED_SEAT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "FAST TRACK WHERE OFFERED",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "OVERHEAD CABIN BAG W PRIO BRD",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHANGEABLE TICKET",
+                "isChargeable": true,
+                "amenityType": "BRANDED_FARES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "INTERNET ACCESS",
+                "isChargeable": false,
+                "amenityType": "ENTERTAINMENT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "flight-offer",
+    "id": "2",
+    "source": "GDS",
+    "instantTicketingRequired": false,
+    "nonHomogeneous": false,
+    "oneWay": false,
+    "isUpsellOffer": false,
+    "lastTicketingDate": "2025-11-24",
+    "lastTicketingDateTime": "2025-11-24",
+    "numberOfBookableSeats": 3,
+    "itineraries": [
+      {
+        "duration": "PT1H55M",
+        "segments": [
+          {
+            "departure": {
+              "iataCode": "CPH",
+              "terminal": "2",
+              "at": "2025-11-30T08:30:00"
+            },
+            "arrival": {
+              "iataCode": "LGW",
+              "terminal": "S",
+              "at": "2025-11-30T09:25:00"
+            },
+            "carrierCode": "D8",
+            "number": "3510",
+            "aircraft": {
+              "code": "7M8"
+            },
+            "operating": {
+              "carrierCode": "D8"
+            },
+            "duration": "PT1H55M",
+            "id": "2",
+            "numberOfStops": 0,
+            "blacklistedInEU": false
+          }
+        ]
+      },
+      {
+        "duration": "PT10H35M",
+        "segments": [
+          {
+            "departure": {
+              "iataCode": "LGW",
+              "terminal": "S",
+              "at": "2025-12-07T20:35:00"
+            },
+            "arrival": {
+              "iataCode": "ARN",
+              "terminal": "5",
+              "at": "2025-12-07T23:55:00"
+            },
+            "carrierCode": "D8",
+            "number": "4460",
+            "aircraft": {
+              "code": "73H"
+            },
+            "operating": {
+              "carrierCode": "D8"
+            },
+            "duration": "PT2H20M",
+            "id": "7",
+            "numberOfStops": 0,
+            "blacklistedInEU": false
+          },
+          {
+            "departure": {
+              "iataCode": "ARN",
+              "terminal": "5",
+              "at": "2025-12-08T07:00:00"
+            },
+            "arrival": {
+              "iataCode": "CPH",
+              "terminal": "3",
+              "at": "2025-12-08T08:10:00"
+            },
+            "carrierCode": "D8",
+            "number": "4151",
+            "aircraft": {
+              "code": "73H"
+            },
+            "operating": {
+              "carrierCode": "D8"
+            },
+            "duration": "PT1H10M",
+            "id": "8",
+            "numberOfStops": 0,
+            "blacklistedInEU": false
+          }
+        ]
+      }
+    ],
+    "price": {
+      "currency": "EUR",
+      "total": "341.34",
+      "base": "182.00",
+      "fees": [
+        {
+          "amount": "0.00",
+          "type": "SUPPLIER"
+        },
+        {
+          "amount": "0.00",
+          "type": "TICKETING"
+        }
+      ],
+      "grandTotal": "341.34"
+    },
+    "pricingOptions": {
+      "fareType": [
+        "PUBLISHED"
+      ],
+      "includedCheckedBagsOnly": false
+    },
+    "validatingAirlineCodes": [
+      "DY"
+    ],
+    "travelerPricings": [
+      {
+        "travelerId": "1",
+        "fareOption": "STANDARD",
+        "travelerType": "ADULT",
+        "price": {
+          "currency": "EUR",
+          "total": "170.67",
+          "base": "91.00"
+        },
+        "fareDetailsBySegment": [
+          {
+            "segmentId": "2",
+            "cabin": "ECONOMY",
+            "fareBasis": "QCALF",
+            "brandedFare": "LOWFARE",
+            "brandedFareLabel": "LOWFARE",
+            "class": "Q",
+            "includedCheckedBags": {
+              "quantity": 0
+            },
+            "includedCabinBags": {
+              "quantity": 0
+            },
+            "amenities": [
+              {
+                "description": "CHARGEABLE BAG 1",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHARGEABLE BAG 2",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "PRE RESERVED SEAT ASSIGNMENT",
+                "isChargeable": true,
+                "amenityType": "PRE_RESERVED_SEAT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "FAST TRACK WHERE OFFERED",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "OVERHEAD CABIN BAG W PRIO BRD",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHANGEABLE TICKET",
+                "isChargeable": true,
+                "amenityType": "BRANDED_FARES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "INTERNET ACCESS",
+                "isChargeable": false,
+                "amenityType": "ENTERTAINMENT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              }
+            ]
+          },
+          {
+            "segmentId": "7",
+            "cabin": "ECONOMY",
+            "fareBasis": "TLF",
+            "brandedFare": "LOWFARE",
+            "brandedFareLabel": "LOWFARE",
+            "class": "T",
+            "includedCheckedBags": {
+              "quantity": 0
+            },
+            "includedCabinBags": {
+              "quantity": 0
+            },
+            "amenities": [
+              {
+                "description": "CHARGEABLE BAG 1",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHARGEABLE BAG 2",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "PRE RESERVED SEAT ASSIGNMENT",
+                "isChargeable": true,
+                "amenityType": "PRE_RESERVED_SEAT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "FAST TRACK WHERE OFFERED",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "OVERHEAD CABIN BAG W PRIO BRD",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHANGEABLE TICKET",
+                "isChargeable": true,
+                "amenityType": "BRANDED_FARES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "INTERNET ACCESS",
+                "isChargeable": false,
+                "amenityType": "ENTERTAINMENT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              }
+            ]
+          },
+          {
+            "segmentId": "8",
+            "cabin": "ECONOMY",
+            "fareBasis": "XLF",
+            "brandedFare": "LOWFARE",
+            "brandedFareLabel": "LOWFARE",
+            "class": "X",
+            "includedCheckedBags": {
+              "quantity": 0
+            },
+            "includedCabinBags": {
+              "quantity": 0
+            },
+            "amenities": [
+              {
+                "description": "CHARGEABLE BAG 1",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHARGEABLE BAG 2",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "PRE RESERVED SEAT ASSIGNMENT",
+                "isChargeable": true,
+                "amenityType": "PRE_RESERVED_SEAT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "FAST TRACK WHERE OFFERED",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "OVERHEAD CABIN BAG W PRIO BRD",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHANGEABLE TICKET",
+                "isChargeable": true,
+                "amenityType": "BRANDED_FARES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "INTERNET ACCESS",
+                "isChargeable": false,
+                "amenityType": "ENTERTAINMENT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "travelerId": "2",
+        "fareOption": "STANDARD",
+        "travelerType": "ADULT",
+        "price": {
+          "currency": "EUR",
+          "total": "170.67",
+          "base": "91.00"
+        },
+        "fareDetailsBySegment": [
+          {
+            "segmentId": "2",
+            "cabin": "ECONOMY",
+            "fareBasis": "QCALF",
+            "brandedFare": "LOWFARE",
+            "brandedFareLabel": "LOWFARE",
+            "class": "Q",
+            "includedCheckedBags": {
+              "quantity": 0
+            },
+            "includedCabinBags": {
+              "quantity": 0
+            },
+            "amenities": [
+              {
+                "description": "CHARGEABLE BAG 1",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHARGEABLE BAG 2",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "PRE RESERVED SEAT ASSIGNMENT",
+                "isChargeable": true,
+                "amenityType": "PRE_RESERVED_SEAT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "FAST TRACK WHERE OFFERED",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "OVERHEAD CABIN BAG W PRIO BRD",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHANGEABLE TICKET",
+                "isChargeable": true,
+                "amenityType": "BRANDED_FARES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "INTERNET ACCESS",
+                "isChargeable": false,
+                "amenityType": "ENTERTAINMENT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              }
+            ]
+          },
+          {
+            "segmentId": "7",
+            "cabin": "ECONOMY",
+            "fareBasis": "TLF",
+            "brandedFare": "LOWFARE",
+            "brandedFareLabel": "LOWFARE",
+            "class": "T",
+            "includedCheckedBags": {
+              "quantity": 0
+            },
+            "includedCabinBags": {
+              "quantity": 0
+            },
+            "amenities": [
+              {
+                "description": "CHARGEABLE BAG 1",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHARGEABLE BAG 2",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "PRE RESERVED SEAT ASSIGNMENT",
+                "isChargeable": true,
+                "amenityType": "PRE_RESERVED_SEAT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "FAST TRACK WHERE OFFERED",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "OVERHEAD CABIN BAG W PRIO BRD",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHANGEABLE TICKET",
+                "isChargeable": true,
+                "amenityType": "BRANDED_FARES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "INTERNET ACCESS",
+                "isChargeable": false,
+                "amenityType": "ENTERTAINMENT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              }
+            ]
+          },
+          {
+            "segmentId": "8",
+            "cabin": "ECONOMY",
+            "fareBasis": "XLF",
+            "brandedFare": "LOWFARE",
+            "brandedFareLabel": "LOWFARE",
+            "class": "X",
+            "includedCheckedBags": {
+              "quantity": 0
+            },
+            "includedCabinBags": {
+              "quantity": 0
+            },
+            "amenities": [
+              {
+                "description": "CHARGEABLE BAG 1",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHARGEABLE BAG 2",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "PRE RESERVED SEAT ASSIGNMENT",
+                "isChargeable": true,
+                "amenityType": "PRE_RESERVED_SEAT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "FAST TRACK WHERE OFFERED",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "OVERHEAD CABIN BAG W PRIO BRD",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHANGEABLE TICKET",
+                "isChargeable": true,
+                "amenityType": "BRANDED_FARES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "INTERNET ACCESS",
+                "isChargeable": false,
+                "amenityType": "ENTERTAINMENT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "flight-offer",
+    "id": "3",
+    "source": "GDS",
+    "instantTicketingRequired": false,
+    "nonHomogeneous": false,
+    "oneWay": false,
+    "isUpsellOffer": false,
+    "lastTicketingDate": "2025-11-24",
+    "lastTicketingDateTime": "2025-11-24",
+    "numberOfBookableSeats": 9,
+    "itineraries": [
+      {
+        "duration": "PT1H55M",
+        "segments": [
+          {
+            "departure": {
+              "iataCode": "CPH",
+              "terminal": "2",
+              "at": "2025-11-30T08:30:00"
+            },
+            "arrival": {
+              "iataCode": "LGW",
+              "terminal": "S",
+              "at": "2025-11-30T09:25:00"
+            },
+            "carrierCode": "D8",
+            "number": "3510",
+            "aircraft": {
+              "code": "7M8"
+            },
+            "operating": {
+              "carrierCode": "D8"
+            },
+            "duration": "PT1H55M",
+            "id": "2",
+            "numberOfStops": 0,
+            "blacklistedInEU": false
+          }
+        ]
+      },
+      {
+        "duration": "PT12H35M",
+        "segments": [
+          {
+            "departure": {
+              "iataCode": "LGW",
+              "terminal": "S",
+              "at": "2025-12-07T20:55:00"
+            },
+            "arrival": {
+              "iataCode": "OSL",
+              "at": "2025-12-08T00:05:00"
+            },
+            "carrierCode": "DY",
+            "number": "1311",
+            "aircraft": {
+              "code": "73H"
+            },
+            "operating": {
+              "carrierCode": "DY"
+            },
+            "duration": "PT2H10M",
+            "id": "9",
+            "numberOfStops": 0,
+            "blacklistedInEU": false
+          },
+          {
+            "departure": {
+              "iataCode": "OSL",
+              "at": "2025-12-08T09:15:00"
+            },
+            "arrival": {
+              "iataCode": "CPH",
+              "terminal": "3",
+              "at": "2025-12-08T10:30:00"
+            },
+            "carrierCode": "D8",
+            "number": "3221",
+            "aircraft": {
+              "code": "7M8"
+            },
+            "operating": {
+              "carrierCode": "D8"
+            },
+            "duration": "PT1H15M",
+            "id": "10",
+            "numberOfStops": 0,
+            "blacklistedInEU": false
+          }
+        ]
+      }
+    ],
+    "price": {
+      "currency": "EUR",
+      "total": "369.28",
+      "base": "216.00",
+      "fees": [
+        {
+          "amount": "0.00",
+          "type": "SUPPLIER"
+        },
+        {
+          "amount": "0.00",
+          "type": "TICKETING"
+        }
+      ],
+      "grandTotal": "369.28",
+      "additionalServices": [
+        {
+          "amount": "26.00",
+          "type": "CHECKED_BAGS"
+        }
+      ]
+    },
+    "pricingOptions": {
+      "fareType": [
+        "PUBLISHED"
+      ],
+      "includedCheckedBagsOnly": false
+    },
+    "validatingAirlineCodes": [
+      "DY"
+    ],
+    "travelerPricings": [
+      {
+        "travelerId": "1",
+        "fareOption": "STANDARD",
+        "travelerType": "ADULT",
+        "price": {
+          "currency": "EUR",
+          "total": "184.64",
+          "base": "108.00"
+        },
+        "fareDetailsBySegment": [
+          {
+            "segmentId": "2",
+            "cabin": "ECONOMY",
+            "fareBasis": "QCALF",
+            "brandedFare": "LOWFARE",
+            "brandedFareLabel": "LOWFARE",
+            "class": "Q",
+            "includedCheckedBags": {
+              "quantity": 0
+            },
+            "includedCabinBags": {
+              "quantity": 0
+            },
+            "amenities": [
+              {
+                "description": "CHARGEABLE BAG 1",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHARGEABLE BAG 2",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "PRE RESERVED SEAT ASSIGNMENT",
+                "isChargeable": true,
+                "amenityType": "PRE_RESERVED_SEAT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "FAST TRACK WHERE OFFERED",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "OVERHEAD CABIN BAG W PRIO BRD",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHANGEABLE TICKET",
+                "isChargeable": true,
+                "amenityType": "BRANDED_FARES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "INTERNET ACCESS",
+                "isChargeable": false,
+                "amenityType": "ENTERTAINMENT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              }
+            ]
+          },
+          {
+            "segmentId": "9",
+            "cabin": "ECONOMY",
+            "fareBasis": "LLLF",
+            "brandedFare": "LOWFARE",
+            "brandedFareLabel": "LOWFARE",
+            "class": "L",
+            "includedCheckedBags": {
+              "quantity": 0
+            },
+            "includedCabinBags": {
+              "quantity": 0
+            },
+            "amenities": [
+              {
+                "description": "CHARGEABLE BAG 1",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHARGEABLE BAG 2",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "PRE RESERVED SEAT ASSIGNMENT",
+                "isChargeable": true,
+                "amenityType": "PRE_RESERVED_SEAT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "FAST TRACK WHERE OFFERED",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "OVERHEAD CABIN BAG W PRIO BRD",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHANGEABLE TICKET",
+                "isChargeable": true,
+                "amenityType": "BRANDED_FARES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "INTERNET ACCESS",
+                "isChargeable": false,
+                "amenityType": "ENTERTAINMENT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              }
+            ]
+          },
+          {
+            "segmentId": "10",
+            "cabin": "ECONOMY",
+            "fareBasis": "QCALF",
+            "brandedFare": "LOWFARE",
+            "brandedFareLabel": "LOWFARE",
+            "class": "Q",
+            "includedCheckedBags": {
+              "quantity": 0
+            },
+            "includedCabinBags": {
+              "quantity": 0
+            },
+            "amenities": [
+              {
+                "description": "CHARGEABLE BAG 1",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHARGEABLE BAG 2",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "PRE RESERVED SEAT ASSIGNMENT",
+                "isChargeable": true,
+                "amenityType": "PRE_RESERVED_SEAT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "FAST TRACK WHERE OFFERED",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "OVERHEAD CABIN BAG W PRIO BRD",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHANGEABLE TICKET",
+                "isChargeable": true,
+                "amenityType": "BRANDED_FARES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "INTERNET ACCESS",
+                "isChargeable": false,
+                "amenityType": "ENTERTAINMENT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "travelerId": "2",
+        "fareOption": "STANDARD",
+        "travelerType": "ADULT",
+        "price": {
+          "currency": "EUR",
+          "total": "184.64",
+          "base": "108.00"
+        },
+        "fareDetailsBySegment": [
+          {
+            "segmentId": "2",
+            "cabin": "ECONOMY",
+            "fareBasis": "QCALF",
+            "brandedFare": "LOWFARE",
+            "brandedFareLabel": "LOWFARE",
+            "class": "Q",
+            "includedCheckedBags": {
+              "quantity": 0
+            },
+            "includedCabinBags": {
+              "quantity": 0
+            },
+            "amenities": [
+              {
+                "description": "CHARGEABLE BAG 1",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHARGEABLE BAG 2",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "PRE RESERVED SEAT ASSIGNMENT",
+                "isChargeable": true,
+                "amenityType": "PRE_RESERVED_SEAT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "FAST TRACK WHERE OFFERED",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "OVERHEAD CABIN BAG W PRIO BRD",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHANGEABLE TICKET",
+                "isChargeable": true,
+                "amenityType": "BRANDED_FARES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "INTERNET ACCESS",
+                "isChargeable": false,
+                "amenityType": "ENTERTAINMENT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              }
+            ]
+          },
+          {
+            "segmentId": "9",
+            "cabin": "ECONOMY",
+            "fareBasis": "LLLF",
+            "brandedFare": "LOWFARE",
+            "brandedFareLabel": "LOWFARE",
+            "class": "L",
+            "includedCheckedBags": {
+              "quantity": 0
+            },
+            "includedCabinBags": {
+              "quantity": 0
+            },
+            "amenities": [
+              {
+                "description": "CHARGEABLE BAG 1",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHARGEABLE BAG 2",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "PRE RESERVED SEAT ASSIGNMENT",
+                "isChargeable": true,
+                "amenityType": "PRE_RESERVED_SEAT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "FAST TRACK WHERE OFFERED",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "OVERHEAD CABIN BAG W PRIO BRD",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHANGEABLE TICKET",
+                "isChargeable": true,
+                "amenityType": "BRANDED_FARES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "INTERNET ACCESS",
+                "isChargeable": false,
+                "amenityType": "ENTERTAINMENT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              }
+            ]
+          },
+          {
+            "segmentId": "10",
+            "cabin": "ECONOMY",
+            "fareBasis": "QCALF",
+            "brandedFare": "LOWFARE",
+            "brandedFareLabel": "LOWFARE",
+            "class": "Q",
+            "includedCheckedBags": {
+              "quantity": 0
+            },
+            "includedCabinBags": {
+              "quantity": 0
+            },
+            "amenities": [
+              {
+                "description": "CHARGEABLE BAG 1",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHARGEABLE BAG 2",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "PRE RESERVED SEAT ASSIGNMENT",
+                "isChargeable": true,
+                "amenityType": "PRE_RESERVED_SEAT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "FAST TRACK WHERE OFFERED",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "OVERHEAD CABIN BAG W PRIO BRD",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHANGEABLE TICKET",
+                "isChargeable": true,
+                "amenityType": "BRANDED_FARES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "INTERNET ACCESS",
+                "isChargeable": false,
+                "amenityType": "ENTERTAINMENT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "flight-offer",
+    "id": "4",
+    "source": "GDS",
+    "instantTicketingRequired": false,
+    "nonHomogeneous": false,
+    "oneWay": false,
+    "isUpsellOffer": false,
+    "lastTicketingDate": "2025-11-24",
+    "lastTicketingDateTime": "2025-11-24",
+    "numberOfBookableSeats": 9,
+    "itineraries": [
+      {
+        "duration": "PT1H55M",
+        "segments": [
+          {
+            "departure": {
+              "iataCode": "CPH",
+              "terminal": "2",
+              "at": "2025-11-30T08:30:00"
+            },
+            "arrival": {
+              "iataCode": "LGW",
+              "terminal": "S",
+              "at": "2025-11-30T09:25:00"
+            },
+            "carrierCode": "D8",
+            "number": "3510",
+            "aircraft": {
+              "code": "7M8"
+            },
+            "operating": {
+              "carrierCode": "D8"
+            },
+            "duration": "PT1H55M",
+            "id": "2",
+            "numberOfStops": 0,
+            "blacklistedInEU": false
+          }
+        ]
+      },
+      {
+        "duration": "PT19H20M",
+        "segments": [
+          {
+            "departure": {
+              "iataCode": "LGW",
+              "terminal": "S",
+              "at": "2025-12-07T20:55:00"
+            },
+            "arrival": {
+              "iataCode": "OSL",
+              "at": "2025-12-08T00:05:00"
+            },
+            "carrierCode": "DY",
+            "number": "1311",
+            "aircraft": {
+              "code": "73H"
+            },
+            "operating": {
+              "carrierCode": "DY"
+            },
+            "duration": "PT2H10M",
+            "id": "3",
+            "numberOfStops": 0,
+            "blacklistedInEU": false
+          },
+          {
+            "departure": {
+              "iataCode": "OSL",
+              "at": "2025-12-08T16:00:00"
+            },
+            "arrival": {
+              "iataCode": "CPH",
+              "terminal": "3",
+              "at": "2025-12-08T17:15:00"
+            },
+            "carrierCode": "D8",
+            "number": "3229",
+            "aircraft": {
+              "code": "73H"
+            },
+            "operating": {
+              "carrierCode": "D8"
+            },
+            "duration": "PT1H15M",
+            "id": "4",
+            "numberOfStops": 0,
+            "blacklistedInEU": false
+          }
+        ]
+      }
+    ],
+    "price": {
+      "currency": "EUR",
+      "total": "369.28",
+      "base": "216.00",
+      "fees": [
+        {
+          "amount": "0.00",
+          "type": "SUPPLIER"
+        },
+        {
+          "amount": "0.00",
+          "type": "TICKETING"
+        }
+      ],
+      "grandTotal": "369.28",
+      "additionalServices": [
+        {
+          "amount": "26.00",
+          "type": "CHECKED_BAGS"
+        }
+      ]
+    },
+    "pricingOptions": {
+      "fareType": [
+        "PUBLISHED"
+      ],
+      "includedCheckedBagsOnly": false
+    },
+    "validatingAirlineCodes": [
+      "DY"
+    ],
+    "travelerPricings": [
+      {
+        "travelerId": "1",
+        "fareOption": "STANDARD",
+        "travelerType": "ADULT",
+        "price": {
+          "currency": "EUR",
+          "total": "184.64",
+          "base": "108.00"
+        },
+        "fareDetailsBySegment": [
+          {
+            "segmentId": "2",
+            "cabin": "ECONOMY",
+            "fareBasis": "QCALF",
+            "brandedFare": "LOWFARE",
+            "brandedFareLabel": "LOWFARE",
+            "class": "Q",
+            "includedCheckedBags": {
+              "quantity": 0
+            },
+            "includedCabinBags": {
+              "quantity": 0
+            },
+            "amenities": [
+              {
+                "description": "CHARGEABLE BAG 1",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHARGEABLE BAG 2",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "PRE RESERVED SEAT ASSIGNMENT",
+                "isChargeable": true,
+                "amenityType": "PRE_RESERVED_SEAT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "FAST TRACK WHERE OFFERED",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "OVERHEAD CABIN BAG W PRIO BRD",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHANGEABLE TICKET",
+                "isChargeable": true,
+                "amenityType": "BRANDED_FARES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "INTERNET ACCESS",
+                "isChargeable": false,
+                "amenityType": "ENTERTAINMENT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              }
+            ]
+          },
+          {
+            "segmentId": "3",
+            "cabin": "ECONOMY",
+            "fareBasis": "LLLF",
+            "brandedFare": "LOWFARE",
+            "brandedFareLabel": "LOWFARE",
+            "class": "L",
+            "includedCheckedBags": {
+              "quantity": 0
+            },
+            "includedCabinBags": {
+              "quantity": 0
+            },
+            "amenities": [
+              {
+                "description": "CHARGEABLE BAG 1",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHARGEABLE BAG 2",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "PRE RESERVED SEAT ASSIGNMENT",
+                "isChargeable": true,
+                "amenityType": "PRE_RESERVED_SEAT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "FAST TRACK WHERE OFFERED",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "OVERHEAD CABIN BAG W PRIO BRD",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHANGEABLE TICKET",
+                "isChargeable": true,
+                "amenityType": "BRANDED_FARES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "INTERNET ACCESS",
+                "isChargeable": false,
+                "amenityType": "ENTERTAINMENT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              }
+            ]
+          },
+          {
+            "segmentId": "4",
+            "cabin": "ECONOMY",
+            "fareBasis": "QCALF",
+            "brandedFare": "LOWFARE",
+            "brandedFareLabel": "LOWFARE",
+            "class": "Q",
+            "includedCheckedBags": {
+              "quantity": 0
+            },
+            "includedCabinBags": {
+              "quantity": 0
+            },
+            "amenities": [
+              {
+                "description": "CHARGEABLE BAG 1",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHARGEABLE BAG 2",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "PRE RESERVED SEAT ASSIGNMENT",
+                "isChargeable": true,
+                "amenityType": "PRE_RESERVED_SEAT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "FAST TRACK WHERE OFFERED",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "OVERHEAD CABIN BAG W PRIO BRD",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHANGEABLE TICKET",
+                "isChargeable": true,
+                "amenityType": "BRANDED_FARES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "INTERNET ACCESS",
+                "isChargeable": false,
+                "amenityType": "ENTERTAINMENT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "travelerId": "2",
+        "fareOption": "STANDARD",
+        "travelerType": "ADULT",
+        "price": {
+          "currency": "EUR",
+          "total": "184.64",
+          "base": "108.00"
+        },
+        "fareDetailsBySegment": [
+          {
+            "segmentId": "2",
+            "cabin": "ECONOMY",
+            "fareBasis": "QCALF",
+            "brandedFare": "LOWFARE",
+            "brandedFareLabel": "LOWFARE",
+            "class": "Q",
+            "includedCheckedBags": {
+              "quantity": 0
+            },
+            "includedCabinBags": {
+              "quantity": 0
+            },
+            "amenities": [
+              {
+                "description": "CHARGEABLE BAG 1",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHARGEABLE BAG 2",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "PRE RESERVED SEAT ASSIGNMENT",
+                "isChargeable": true,
+                "amenityType": "PRE_RESERVED_SEAT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "FAST TRACK WHERE OFFERED",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "OVERHEAD CABIN BAG W PRIO BRD",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHANGEABLE TICKET",
+                "isChargeable": true,
+                "amenityType": "BRANDED_FARES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "INTERNET ACCESS",
+                "isChargeable": false,
+                "amenityType": "ENTERTAINMENT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              }
+            ]
+          },
+          {
+            "segmentId": "3",
+            "cabin": "ECONOMY",
+            "fareBasis": "LLLF",
+            "brandedFare": "LOWFARE",
+            "brandedFareLabel": "LOWFARE",
+            "class": "L",
+            "includedCheckedBags": {
+              "quantity": 0
+            },
+            "includedCabinBags": {
+              "quantity": 0
+            },
+            "amenities": [
+              {
+                "description": "CHARGEABLE BAG 1",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHARGEABLE BAG 2",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "PRE RESERVED SEAT ASSIGNMENT",
+                "isChargeable": true,
+                "amenityType": "PRE_RESERVED_SEAT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "FAST TRACK WHERE OFFERED",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "OVERHEAD CABIN BAG W PRIO BRD",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHANGEABLE TICKET",
+                "isChargeable": true,
+                "amenityType": "BRANDED_FARES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "INTERNET ACCESS",
+                "isChargeable": false,
+                "amenityType": "ENTERTAINMENT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              }
+            ]
+          },
+          {
+            "segmentId": "4",
+            "cabin": "ECONOMY",
+            "fareBasis": "QCALF",
+            "brandedFare": "LOWFARE",
+            "brandedFareLabel": "LOWFARE",
+            "class": "Q",
+            "includedCheckedBags": {
+              "quantity": 0
+            },
+            "includedCabinBags": {
+              "quantity": 0
+            },
+            "amenities": [
+              {
+                "description": "CHARGEABLE BAG 1",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHARGEABLE BAG 2",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "PRE RESERVED SEAT ASSIGNMENT",
+                "isChargeable": true,
+                "amenityType": "PRE_RESERVED_SEAT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "FAST TRACK WHERE OFFERED",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "OVERHEAD CABIN BAG W PRIO BRD",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHANGEABLE TICKET",
+                "isChargeable": true,
+                "amenityType": "BRANDED_FARES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "INTERNET ACCESS",
+                "isChargeable": false,
+                "amenityType": "ENTERTAINMENT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "flight-offer",
+    "id": "5",
+    "source": "GDS",
+    "instantTicketingRequired": false,
+    "nonHomogeneous": false,
+    "oneWay": false,
+    "isUpsellOffer": false,
+    "lastTicketingDate": "2025-11-24",
+    "lastTicketingDateTime": "2025-11-24",
+    "numberOfBookableSeats": 5,
+    "itineraries": [
+      {
+        "duration": "PT2H5M",
+        "segments": [
+          {
+            "departure": {
+              "iataCode": "CPH",
+              "terminal": "2",
+              "at": "2025-11-30T12:20:00"
+            },
+            "arrival": {
+              "iataCode": "LGW",
+              "terminal": "S",
+              "at": "2025-11-30T13:25:00"
+            },
+            "carrierCode": "D8",
+            "number": "3514",
+            "aircraft": {
+              "code": "7M8"
+            },
+            "operating": {
+              "carrierCode": "D8"
+            },
+            "duration": "PT2H5M",
+            "id": "1",
+            "numberOfStops": 0,
+            "blacklistedInEU": false
+          }
+        ]
+      },
+      {
+        "duration": "PT12H30M",
+        "segments": [
+          {
+            "departure": {
+              "iataCode": "LGW",
+              "terminal": "S",
+              "at": "2025-12-07T20:35:00"
+            },
+            "arrival": {
+              "iataCode": "ARN",
+              "terminal": "5",
+              "at": "2025-12-07T23:55:00"
+            },
+            "carrierCode": "D8",
+            "number": "4460",
+            "aircraft": {
+              "code": "73H"
+            },
+            "operating": {
+              "carrierCode": "D8"
+            },
+            "duration": "PT2H20M",
+            "id": "5",
+            "numberOfStops": 0,
+            "blacklistedInEU": false
+          },
+          {
+            "departure": {
+              "iataCode": "ARN",
+              "terminal": "5",
+              "at": "2025-12-08T08:55:00"
+            },
+            "arrival": {
+              "iataCode": "CPH",
+              "terminal": "3",
+              "at": "2025-12-08T10:05:00"
+            },
+            "carrierCode": "D8",
+            "number": "3195",
+            "aircraft": {
+              "code": "7M8"
+            },
+            "operating": {
+              "carrierCode": "D8"
+            },
+            "duration": "PT1H10M",
+            "id": "6",
+            "numberOfStops": 0,
+            "blacklistedInEU": false
+          }
+        ]
+      }
+    ],
+    "price": {
+      "currency": "EUR",
+      "total": "373.34",
+      "base": "214.00",
+      "fees": [
+        {
+          "amount": "0.00",
+          "type": "SUPPLIER"
+        },
+        {
+          "amount": "0.00",
+          "type": "TICKETING"
+        }
+      ],
+      "grandTotal": "373.34"
+    },
+    "pricingOptions": {
+      "fareType": [
+        "PUBLISHED"
+      ],
+      "includedCheckedBagsOnly": false
+    },
+    "validatingAirlineCodes": [
+      "DY"
+    ],
+    "travelerPricings": [
+      {
+        "travelerId": "1",
+        "fareOption": "STANDARD",
+        "travelerType": "ADULT",
+        "price": {
+          "currency": "EUR",
+          "total": "186.67",
+          "base": "107.00"
+        },
+        "fareDetailsBySegment": [
+          {
+            "segmentId": "1",
+            "cabin": "ECONOMY",
+            "fareBasis": "PLF",
+            "brandedFare": "LOWFARE",
+            "brandedFareLabel": "LOWFARE",
+            "class": "P",
+            "includedCheckedBags": {
+              "quantity": 0
+            },
+            "includedCabinBags": {
+              "quantity": 0
+            },
+            "amenities": [
+              {
+                "description": "CHARGEABLE BAG 1",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHARGEABLE BAG 2",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "PRE RESERVED SEAT ASSIGNMENT",
+                "isChargeable": true,
+                "amenityType": "PRE_RESERVED_SEAT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "FAST TRACK WHERE OFFERED",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "OVERHEAD CABIN BAG W PRIO BRD",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHANGEABLE TICKET",
+                "isChargeable": true,
+                "amenityType": "BRANDED_FARES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "INTERNET ACCESS",
+                "isChargeable": false,
+                "amenityType": "ENTERTAINMENT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              }
+            ]
+          },
+          {
+            "segmentId": "5",
+            "cabin": "ECONOMY",
+            "fareBasis": "TLF",
+            "brandedFare": "LOWFARE",
+            "brandedFareLabel": "LOWFARE",
+            "class": "T",
+            "includedCheckedBags": {
+              "quantity": 0
+            },
+            "includedCabinBags": {
+              "quantity": 0
+            },
+            "amenities": [
+              {
+                "description": "CHARGEABLE BAG 1",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHARGEABLE BAG 2",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "PRE RESERVED SEAT ASSIGNMENT",
+                "isChargeable": true,
+                "amenityType": "PRE_RESERVED_SEAT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "FAST TRACK WHERE OFFERED",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "OVERHEAD CABIN BAG W PRIO BRD",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHANGEABLE TICKET",
+                "isChargeable": true,
+                "amenityType": "BRANDED_FARES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "INTERNET ACCESS",
+                "isChargeable": false,
+                "amenityType": "ENTERTAINMENT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              }
+            ]
+          },
+          {
+            "segmentId": "6",
+            "cabin": "ECONOMY",
+            "fareBasis": "QCALF",
+            "brandedFare": "LOWFARE",
+            "brandedFareLabel": "LOWFARE",
+            "class": "Q",
+            "includedCheckedBags": {
+              "quantity": 0
+            },
+            "includedCabinBags": {
+              "quantity": 0
+            },
+            "amenities": [
+              {
+                "description": "CHARGEABLE BAG 1",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHARGEABLE BAG 2",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "PRE RESERVED SEAT ASSIGNMENT",
+                "isChargeable": true,
+                "amenityType": "PRE_RESERVED_SEAT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "FAST TRACK WHERE OFFERED",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "OVERHEAD CABIN BAG W PRIO BRD",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHANGEABLE TICKET",
+                "isChargeable": true,
+                "amenityType": "BRANDED_FARES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "INTERNET ACCESS",
+                "isChargeable": false,
+                "amenityType": "ENTERTAINMENT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "travelerId": "2",
+        "fareOption": "STANDARD",
+        "travelerType": "ADULT",
+        "price": {
+          "currency": "EUR",
+          "total": "186.67",
+          "base": "107.00"
+        },
+        "fareDetailsBySegment": [
+          {
+            "segmentId": "1",
+            "cabin": "ECONOMY",
+            "fareBasis": "PLF",
+            "brandedFare": "LOWFARE",
+            "brandedFareLabel": "LOWFARE",
+            "class": "P",
+            "includedCheckedBags": {
+              "quantity": 0
+            },
+            "includedCabinBags": {
+              "quantity": 0
+            },
+            "amenities": [
+              {
+                "description": "CHARGEABLE BAG 1",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHARGEABLE BAG 2",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "PRE RESERVED SEAT ASSIGNMENT",
+                "isChargeable": true,
+                "amenityType": "PRE_RESERVED_SEAT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "FAST TRACK WHERE OFFERED",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "OVERHEAD CABIN BAG W PRIO BRD",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHANGEABLE TICKET",
+                "isChargeable": true,
+                "amenityType": "BRANDED_FARES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "INTERNET ACCESS",
+                "isChargeable": false,
+                "amenityType": "ENTERTAINMENT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              }
+            ]
+          },
+          {
+            "segmentId": "5",
+            "cabin": "ECONOMY",
+            "fareBasis": "TLF",
+            "brandedFare": "LOWFARE",
+            "brandedFareLabel": "LOWFARE",
+            "class": "T",
+            "includedCheckedBags": {
+              "quantity": 0
+            },
+            "includedCabinBags": {
+              "quantity": 0
+            },
+            "amenities": [
+              {
+                "description": "CHARGEABLE BAG 1",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHARGEABLE BAG 2",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "PRE RESERVED SEAT ASSIGNMENT",
+                "isChargeable": true,
+                "amenityType": "PRE_RESERVED_SEAT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "FAST TRACK WHERE OFFERED",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "OVERHEAD CABIN BAG W PRIO BRD",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHANGEABLE TICKET",
+                "isChargeable": true,
+                "amenityType": "BRANDED_FARES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "INTERNET ACCESS",
+                "isChargeable": false,
+                "amenityType": "ENTERTAINMENT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              }
+            ]
+          },
+          {
+            "segmentId": "6",
+            "cabin": "ECONOMY",
+            "fareBasis": "QCALF",
+            "brandedFare": "LOWFARE",
+            "brandedFareLabel": "LOWFARE",
+            "class": "Q",
+            "includedCheckedBags": {
+              "quantity": 0
+            },
+            "includedCabinBags": {
+              "quantity": 0
+            },
+            "amenities": [
+              {
+                "description": "CHARGEABLE BAG 1",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHARGEABLE BAG 2",
+                "isChargeable": true,
+                "amenityType": "BAGGAGE",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "PRE RESERVED SEAT ASSIGNMENT",
+                "isChargeable": true,
+                "amenityType": "PRE_RESERVED_SEAT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "FAST TRACK WHERE OFFERED",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "OVERHEAD CABIN BAG W PRIO BRD",
+                "isChargeable": true,
+                "amenityType": "TRAVEL_SERVICES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "CHANGEABLE TICKET",
+                "isChargeable": true,
+                "amenityType": "BRANDED_FARES",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              },
+              {
+                "description": "INTERNET ACCESS",
+                "isChargeable": false,
+                "amenityType": "ENTERTAINMENT",
+                "amenityProvider": {
+                  "name": "BrandedFare"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
