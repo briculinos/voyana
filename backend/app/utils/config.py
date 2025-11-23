@@ -38,6 +38,9 @@ class Settings(BaseSettings):
     secret_key: str = "change-this-in-production-please"
     allowed_origins: Union[List[str], str] = "http://localhost:3000"
 
+    # Google OAuth
+    google_client_id: str = ""
+
     # LangSmith
     langchain_tracing_v2: bool = False
     langchain_project: str = "travel-concierge"

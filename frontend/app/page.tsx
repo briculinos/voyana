@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import ChatInterface from '@/components/ChatInterface'
 import ItineraryDisplay from '@/components/ItineraryDisplay'
+import UserMenu from '@/components/UserMenu'
 import { Itinerary } from '@/lib/types'
 
 interface DestinationInfo {
@@ -46,10 +47,13 @@ export default function Home() {
             </h1>
           </div>
 
-          {/* Tagline */}
-          <p className="text-lg text-gray-600 max-w-xl text-right hidden lg:block">
-            Tell us what you're looking for, and our AI agents will craft the perfect trip just for you
-          </p>
+          {/* Tagline and User Menu */}
+          <div className="flex items-center gap-6">
+            <p className="text-lg text-gray-600 max-w-xl text-right hidden lg:block">
+              Tell us what you're looking for, and our AI agents will craft the perfect trip just for you
+            </p>
+            <UserMenu />
+          </div>
         </header>
 
         {/* Main Content */}

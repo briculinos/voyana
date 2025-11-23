@@ -4,7 +4,7 @@ Main entry point for the Voyana API.
 """
 import logging
 from contextlib import asynccontextmanager
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Depends, Header
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
@@ -13,6 +13,7 @@ import json
 
 from app.agents.workflow import workflow
 from app.utils.config import settings
+from app.utils.auth import verify_google_token, create_access_token, verify_token
 
 # Configure logging
 logging.basicConfig(
@@ -73,6 +74,46 @@ class TravelResponse(BaseModel):
     metadata: dict
 
 
+class GoogleAuthRequest(BaseModel):
+    """Request model for Google OAuth"""
+    token: str
+
+    class Config:
+        json_schema_extra = {
+            "example": {
+                "token": "google_oauth_token_here"
+            }
+        }
+
+
+class AuthResponse(BaseModel):
+    """Response model for authentication"""
+    access_token: str
+    token_type: str
+    user: dict
+
+
+# Auth dependency
+async def get_current_user(authorization: Optional[str] = Header(None)):
+    """Dependency to get current user from JWT token"""
+    if not authorization:
+        return None
+
+    try:
+        scheme, token = authorization.split()
+        if scheme.lower() != 'bearer':
+            return None
+
+        payload = verify_token(token)
+        if not payload:
+            return None
+
+        return payload
+
+    except Exception:
+        return None
+
+
 # Routes
 @app.get("/")
 async def root():
@@ -99,8 +140,61 @@ async def health():
             "flight_search": True,
             "hotel_search": True,
             "personalization": True,
-            "streaming": True
+            "streaming": True,
+            "authentication": True
         }
+    }
+
+
+@app.post("/api/auth/google", response_model=AuthResponse)
+async def google_auth(request: GoogleAuthRequest):
+    """
+    Authenticate with Google OAuth token.
+    Frontend sends Google ID token, backend verifies it and returns JWT.
+    """
+    try:
+        # Verify Google token
+        user_info = await verify_google_token(request.token)
+        if not user_info:
+            raise HTTPException(status_code=401, detail="Invalid Google token")
+
+        logger.info(f"User authenticated: {user_info['email']}")
+
+        # Create JWT token
+        access_token = create_access_token(
+            data={
+                "sub": user_info['google_id'],
+                "email": user_info['email'],
+                "name": user_info['name'],
+                "picture": user_info['picture']
+            }
+        )
+
+        return AuthResponse(
+            access_token=access_token,
+            token_type="bearer",
+            user={
+                "email": user_info['email'],
+                "name": user_info['name'],
+                "picture": user_info['picture']
+            }
+        )
+
+    except Exception as e:
+        logger.error(f"Authentication error: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/api/auth/me")
+async def get_me(current_user: dict = Depends(get_current_user)):
+    """Get current user information"""
+    if not current_user:
+        raise HTTPException(status_code=401, detail="Not authenticated")
+
+    return {
+        "email": current_user.get("email"),
+        "name": current_user.get("name"),
+        "picture": current_user.get("picture")
     }
 
 
